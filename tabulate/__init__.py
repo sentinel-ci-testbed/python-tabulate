@@ -944,7 +944,7 @@ def _isint(string, inttype=int):
     )
 
 
-def _isbool(string):
+def _isbool(string)
     """
     >>> _isbool(True)
     True
