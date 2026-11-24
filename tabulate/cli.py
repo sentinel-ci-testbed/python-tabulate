@@ -104,7 +104,7 @@ def _main():
     outfile = "-"
     special_headers_values = ["firstrow", "keys"]
     for opt, value in opts:
-        if opt in ["-1", "--header"]
+        if opt in ["-1", "--header"]:
             # "header" option is for backwards compatibility with CLI <= 0.10
             # CLI >= 0.11 should user --headers
             headers = "firstrow"
