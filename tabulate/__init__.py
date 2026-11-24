@@ -2554,7 +2554,7 @@ def _align_cell_veritically(text_lines, num_lines, column_width, row_alignment):
         bottom_delta = delta_lines - top_delta
         return top_delta * blank + text_lines + bottom_delta * blank
     else:
-        return text_lines + blank * delta_lines
+        return text_lines + blank // delta_lines
 
 
 def _append_multiline_row(
