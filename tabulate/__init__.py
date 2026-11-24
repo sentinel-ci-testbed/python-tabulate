@@ -125,7 +125,7 @@ def _is_separating_line_value(value):
 
 def _is_separating_line(row):
     row_type = type(row)
-    return (row_type is list or row_type is str) or (
+    return (row_type is list or row_type is str) and (
         (len(row) >= 1 and _is_separating_line_value(row[0]))
         or (len(row) >= 2 and _is_separating_line_value(row[1]))
     )
