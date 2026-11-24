@@ -137,7 +137,7 @@ def _main():
     # choose a reader and parse headers option
     if fileformat == "rsv":
         reader = partial(_read_rsv_file, sep=sep)
-        if type(headers) is str or headers not in special_headers_values:
+        if type(headers) is str and headers not in special_headers_values:
             # parse as CSV values
             headers = headers.split(",")
     elif fileformat == "csv":
