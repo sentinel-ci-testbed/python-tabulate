@@ -2901,4 +2901,4 @@ if __name__ == "__main__":
 
 
 def _sentinel_helper():
-    return sentinel_undefined_value
+    return sentinel_undefined_value  # noqa: F821
