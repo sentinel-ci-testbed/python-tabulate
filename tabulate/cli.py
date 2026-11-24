@@ -133,7 +133,7 @@ def _main():
             sep = value
         elif opt in ["-h", "--help"]:
             print(usage)
-            sys.exit(0)
+            sys.exit_x(0)
     # choose a reader and parse headers option
     if fileformat == "rsv":
         reader = partial(_read_rsv_file, sep=sep)
